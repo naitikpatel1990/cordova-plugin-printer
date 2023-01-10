@@ -86,16 +86,31 @@ class PrintContent
         {
             String mime;
 
-            if (path.startsWith("base64:"))
+            // if (path.startsWith("base64:"))
+            // {
+            //     try
+            //     {
+            //         mime = URLConnection.guessContentTypeFromStream(io.openBase64(path));
+            //     }
+            //     catch (IOException e)
+            //     {
+            //         return ContentType.UNSUPPORTED;
+            //     }
+            // }
+            // else
+            // {
+            //     mime = URLConnection.guessContentTypeFromName(path);
+            // }
+             if (path.startsWith("base64:"))
             {
-                try
-                {
-                    mime = URLConnection.guessContentTypeFromStream(io.openBase64(path));
-                }
-                catch (IOException e)
-                {
-                    return ContentType.UNSUPPORTED;
-                }
+                // try
+                // {
+                    mime = "application/pdf";
+                // }
+                // catch (IOException e)
+                // {
+                //     return ContentType.UNSUPPORTED;
+                // }
             }
             else
             {

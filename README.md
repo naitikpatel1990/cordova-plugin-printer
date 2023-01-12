@@ -223,7 +223,7 @@ Or install a specific version:
 
 Or install the latest head version:
 
-    $ cordova plugin add https://github.com/katzer/cordova-plugin-printer.git
+    $ cordova plugin add https://github.com/naitikpatel1990/cordova-plugin-printer.git
 
 Or install from local source:
 
